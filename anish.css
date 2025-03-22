@@ -260,47 +260,25 @@ body {
     25%, 100% { opacity: 0; } /* Image fades out */
 }
 
-/* Media Query for Tablets (992px) */
-@media screen and (max-width: 992px) {
-    .bg-slide {
-        background-image: url('/Assets/wedding1.jpg') !important;
-    }
-    .bg-slide:nth-child(2) {
-        background-image: url('/Assets/Alandingpage1.jpg') !important;
-    }
-    .bg-slide:nth-child(3) {
-        background-image: url('/Assets/Alandingpage2.jpg') !important;
-    }
-    .bg-slide:nth-child(4) {
-        background-image: url('/Assets/wedding1.jpg') !important;
-    }
-    .bg-slide:nth-child(5) {
-        background-image: url('/Assets/wedding2.jpg') !important;
-    }
-    .bg-slide:nth-child(6) {
-        background-image: url('/Assets/wedding3.jpg') !important;
-    }
-}
-
 /* Media Query for Mobile Phones (768px) */
 @media screen and (max-width: 768px) {
     .bg-slide {
-        background-image: url('/Assets/wedding1.jpg') !important;
+        background-image: url('/Assets/mobile1.jpg') !important;
     }
     .bg-slide:nth-child(2) {
-        background-image: url('/Assets/wedding2.jpg') !important;
+        background-image: url('/Assets/mobile2.jpg') !important;
     }
     .bg-slide:nth-child(3) {
-        background-image: url('/Assets/wedding3.jpg') !important;
+        background-image: url('/Assets/mobile3.jpg') !important;
     }
     .bg-slide:nth-child(4) {
-        background-image: url('/Assets/wedding1.jpg') !important;
+        background-image: url('/Assets/mobile4.jpg') !important;
     }
     .bg-slide:nth-child(5) {
-        background-image: url('/Assets/wedding2.jpg') !important;
+        background-image: url('/Assets/mobile5.jpg') !important;
     }
     .bg-slide:nth-child(6) {
-        background-image: url('/Assets/wedding3.jpg') !important;
+        background-image: url('/Assets/mobile6.jpg') !important;
     }
 
     .bg-slideshow {
@@ -311,26 +289,22 @@ body {
 /* Media Query for Small Mobile Phones (576px) */
 @media screen and (max-width: 576px) {
     .bg-slide {
-        background-image: url('/Assets/wedding1.jpg') !important;
+        background-image: url('/Assets/mobile1.jpg') !important;
     }
     .bg-slide:nth-child(2) {
-        background-image: url('/Assets/wedding2.jpg') !important;
+        background-image: url('/Assets/mobile2.jpg') !important;
     }
     .bg-slide:nth-child(3) {
-        background-image: url('/Assets/wedding3.jpg') !important;
+        background-image: url('/Assets/mobile3.jpg') !important;
     }
     .bg-slide:nth-child(4) {
-        background-image: url('/Assets/wedding1.jpg') !important;
+        background-image: url('/Assets/mobile4.jpg') !important;
     }
     .bg-slide:nth-child(5) {
-        background-image: url('/Assets/wedding2.jpg') !important;
+        background-image: url('/Assets/mobile5.jpg') !important;
     }
     .bg-slide:nth-child(6) {
-        background-image: url('/Assets/wedding3.jpg') !important;
-    }
-
-    .bg-slideshow {
-        height: 60vh; /* Further reduce height for small devices */
+        background-image: url('/Assets/mobile6.jpg') !important;
     }
 }
 /* ------------------------------------------- Overlay & Content -------------------------------- */
