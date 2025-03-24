@@ -128,8 +128,8 @@ a {
     transition: all 0.4s ease;
     color: #FF6B01;
 }
-
-/* Responsive Navbar Styling */
+/* 
+Responsive Navbar Styling
 @media screen and (max-width: 768px) {
     .navv {
         flex-direction: column;
@@ -155,7 +155,7 @@ a {
         color: #1e549f;
         cursor: pointer;
     }
-}
+} */
 
 /* Hamburger Menu */
 .hamburger {
@@ -165,7 +165,7 @@ a {
 .hamburger.active {
     color: #ff6f61;
 }
-
+/* 
 @media screen and (max-width: 768px) {
     .menu-iconn {
         display: flex;
@@ -214,7 +214,7 @@ a {
     .navv.active {
         display: flex;
     }
-}
+} */
 
 /* Body Styles */
 body {
@@ -261,7 +261,7 @@ body {
 }
 
 /* Media Query for Mobile Phones (768px) */
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
     .bg-slide {
         background-image: url('/Assets/mobile1.jpg') !important;
     }
@@ -284,10 +284,10 @@ body {
     .bg-slideshow {
         height: 80vh; /* Adjust height for mobile */
     }
-}
+} */
 
 /* Media Query for Small Mobile Phones (576px) */
-@media screen and (max-width: 576px) {
+/* @media screen and (max-width: 576px) {
     .bg-slide {
         background-image: url('/Assets/mobile1.jpg') !important;
     }
@@ -306,7 +306,7 @@ body {
     .bg-slide:nth-child(6) {
         background-image: url('/Assets/mobile6.jpg') !important;
     }
-}
+} */
 /* ------------------------------------------- Overlay & Content -------------------------------- */
 
 /* Overlay container to place menu and text */
@@ -698,7 +698,7 @@ header p {
     margin-top: 1px;
     display: block;
 }
-
+/* 
 @media screen and (max-width: 768px) {
     .contact {
         flex-direction: column;
@@ -719,7 +719,7 @@ header p {
     .social-links {
         justify-content: center;
     }
-}
+} */
 
 /* Footer */
 footer {
@@ -731,3 +731,235 @@ footer {
     font-size: 14px;
 }
 
+/* ... (Your existing CSS code) ... */
+
+/* Responsive Navbar Styling */
+@media screen and (max-width: 768px) {
+    .navv {
+        flex-direction: column;
+        gap: 10px;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        padding: 15px;
+        display: none;
+    }
+
+    .navv.active {
+        display: flex;
+    }
+
+    .text-logo {
+        margin-right: auto;
+    }
+
+    .hamburger {
+        display: block;
+        font-size: 24px;
+        color: #1e549f;
+        cursor: pointer;
+    }
+}
+
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+}
+
+.hamburger.active {
+    color: #ff6f61;
+}
+
+@media screen and (max-width: 768px) {
+    .menu-iconn {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        cursor: pointer;
+        position: absolute;
+        top: 30px;
+        right: 20px;
+        z-index: 2;
+    }
+
+    .menu-iconn span {
+        width: 25px;
+        height: 3px;
+        background-color: #1e549f;
+        border-radius: 3px;
+        transition: all 0.3s ease;
+    }
+
+    .menu-iconn.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .menu-iconn.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-iconn.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px);
+    }
+
+    .navv {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background-color: rgba(173, 155, 155, 0.726);
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        border-radius: 5px;
+        padding: 10px;
+    }
+
+    .navv.active {
+        display: flex;
+    }
+}
+
+/* ------------------------------------------- Background Slideshow ------------------------------ */
+
+/* Media Query for Mobile Phones (768px) */
+@media screen and (max-width: 768px) {
+    .bg-slide {
+        background-image: url('/Assets/mobile1.jpg') !important;
+    }
+    .bg-slide:nth-child(2) {
+        background-image: url('/Assets/mobile2.jpg') !important;
+    }
+    .bg-slide:nth-child(3) {
+        background-image: url('/Assets/mobile3.jpg') !important;
+    }
+    .bg-slide:nth-child(4) {
+        background-image: url('/Assets/mobile4.jpg') !important;
+    }
+    .bg-slide:nth-child(5) {
+        background-image: url('/Assets/mobile5.jpg') !important;
+    }
+    .bg-slide:nth-child(6) {
+        background-image: url('/Assets/mobile6.jpg') !important;
+    }
+
+    .bg-slideshow {
+        height: 80vh; /* Adjust height for mobile */
+    }
+
+    .text-overlay {
+        font-size: 30px; /* Adjust text overlay size for mobile */
+    }
+}
+
+/* Media Query for Small Mobile Phones (576px) */
+@media screen and (max-width: 576px) {
+    .bg-slide {
+        background-image: url('/Assets/mobile1.jpg') !important;
+    }
+    .bg-slide:nth-child(2) {
+        background-image: url('/Assets/mobile2.jpg') !important;
+    }
+    .bg-slide:nth-child(3) {
+        background-image: url('/Assets/mobile3.jpg') !important;
+    }
+    .bg-slide:nth-child(4) {
+        background-image: url('/Assets/mobile4.jpg') !important;
+    }
+    .bg-slide:nth-child(5) {
+        background-image: url('/Assets/mobile5.jpg') !important;
+    }
+    .bg-slide:nth-child(6) {
+        background-image: url('/Assets/mobile6.jpg') !important;
+    }
+}
+
+/* Gallery Section */
+@media screen and (max-width: 768px) {
+    .gallery-container img {
+        width: 100%; /* Make gallery images full width on mobile */
+        height: auto; /* Adjust height automatically */
+    }
+}
+
+/* Testimonials Section */
+@media screen and (max-width: 768px) {
+    .testimonial-content img {
+        width: 150px; /* Reduce image size for mobile */
+        height: 150px;
+    }
+
+    .testimonial-text {
+        font-size: 1rem; /* Reduce text size for mobile */
+    }
+}
+
+/* Members Section */
+@media screen and (max-width: 768px) {
+    .members-container {
+        flex-direction: column; /* Stack members vertically on mobile */
+        align-items: center;
+    }
+
+    .members-container img {
+        width: 100px; /* Reduce image size for mobile */
+        height: 100px;
+    }
+}
+
+/* Contact Section */
+@media screen and (max-width: 768px) {
+    .contact {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social-links {
+        gap: 10px;
+        margin-left: -60px;
+    }
+
+    .contact-info,
+    .contact-form {
+        flex: 1;
+        margin: 0;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+
+    .download-btn {
+      margin-left: 0; /*reset the margin for mobile */
+      margin-top:20px;
+    }
+    .overlay-container {
+        position: absolute;
+        width: 100%;
+        height: 82%;
+        top: 0;
+        left: 0;
+        z-index: 2; /* Ensures it's above the slideshow */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        overflow-x: hidden;
+    }
+    
+    /* Semi-transparent overlay */
+    .overlay-content {
+        background: rgba(0, 0, 0, 0.4); /* Dark transparent effect */
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 3; /* Ensure overlay is above container */
+    }
+}
