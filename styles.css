@@ -910,116 +910,143 @@ footer {
 /* Contact Section - Mobile Responsive Styles */
 @media screen and (max-width: 768px) {
     .contact {
+        display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
         padding: 20px;
         box-sizing: border-box;
+        text-align: center;
+        width: 100%;
     }
 
     .social-links {
-        gap: 10px; /* Increased gap between icons */
-        margin-left: -80px  ;
+        display: flex;
+        gap: 12px;
+        margin: 20px 0;
+        padding: 0;
         justify-content: center;
         flex-wrap: wrap;
+        width: 100%;
     }
 
     .social-links a {
-        font-size: 28px; /* Significantly increased icon size */
-        width: 48px; /* Larger clickable area */
-        height: 48px;
+        font-size: 26px;
+        width: 44px;
+        height: 44px;
         display: flex;
         align-items: center;
         justify-content: center;
-        transition: all 0.3s ease; /* Smooth hover effect */
-    }
-
-    .social-links a:hover {
-        transform: scale(1.1); /* Slight grow effect on hover */
+        transition: all 0.3s ease;
     }
 
     .contact-info, 
     .contact-form {
-        width: 100%;
+        width: 90%;
+        max-width: 380px;
         flex: none;
-        margin: 15px 0;
-        padding: 0 15px;
-        box-sizing: border-box;
-    }
-
-    .download-btn {
-        margin-left: 0;
-        margin-top: 30px;
-        width: 100%;
+        margin: 10px auto;
+        padding: 10px;
         text-align: center;
     }
 
-    .overlay-container {
-        position: absolute;
+    .contact-info p {
+        margin: 10px 0;
+        line-height: 1.6;
+    }
+
+    .contact-info address,
+    .contact-info p,
+    .contact-info a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* .download-btn {
+        margin-top: 20px;
         width: 100%;
-        height: auto;
-        min-height: 85.2%;
+        max-width: 250px;
+        padding: 12px 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    } */
+
+    .overlay-container {
+        position: relative;
+        width: 100%;
+        min-height: auto;
         top: 0;
         left: 0;
         z-index: 2;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
-        flex-direction: column;
         text-align: center;
-        overflow-x: hidden;
         padding: 20px;
         box-sizing: border-box;
     }
 
-    /* Form elements */
-    .contact-form input,
-    .contact-form textarea,
-    .contact-form button {
-        width: 100%;
+    .contact-info address {
+        font-style: normal;
         margin: 10px 0;
+        line-height: 1.5;
     }
 
-    /* Additional mobile-specific adjustments */
-    body {
-        overflow-x: hidden;
+    .contact-info a {
+        display: block;
+        margin: 10px 0;
     }
 
     /* For very small devices */
     @media screen and (max-width: 480px) {
         .overlay-container {
-            height: auto;
-            padding: 10px;
+            padding: 15px;
+        }
+        
+        .social-links {
+            gap: 10px;
         }
         
         .social-links a {
-            font-size: 26px; /* Still large for small devices */
-            width: 44px;
-            height: 44px;
+            font-size: 24px;
+            width: 40px;
+            height: 40px;
         }
         
         .contact-info h3,
         .contact-form h3 {
             font-size: 1.2rem;
+            margin-bottom: 12px;
         }
+        
+        /* .download-btn {
+            max-width: 220px;
+        } */
     }
 
-    /* For landscape orientation on mobile */
+    /* For landscape orientation */
     @media screen and (max-height: 500px) and (orientation: landscape) {
         .overlay-container {
-            height: 100vh;
             justify-content: flex-start;
             padding-top: 20px;
         }
         
-        .social-links {
-            gap: 15px; /* Slightly smaller gap in landscape */
+        .contact {
+            padding-top: 10px;
         }
         
-        .social-links a {
-            font-size: 24px; /* Adjusted for landscape */
+        .social-links {
+            margin: 10px 0;
         }
     }
-}
     
     /* Semi-transparent overlay */
     .overlay-content {
