@@ -907,46 +907,119 @@ footer {
     }
 }
 
-/* Contact Section */
+/* Contact Section - Mobile Responsive Styles */
 @media screen and (max-width: 768px) {
     .contact {
         flex-direction: column;
         align-items: center;
+        padding: 20px;
+        box-sizing: border-box;
     }
 
     .social-links {
-        gap: 10px;
-        margin-left: -60px;
-    }
-
-    .contact-info,
-    .contact-form {
-        flex: 1;
-        margin: 0;
-    }
-
-    .social-links {
+        gap: 10px; /* Increased gap between icons */
+        margin-left: -80px  ;
         justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .social-links a {
+        font-size: 28px; /* Significantly increased icon size */
+        width: 48px; /* Larger clickable area */
+        height: 48px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s ease; /* Smooth hover effect */
+    }
+
+    .social-links a:hover {
+        transform: scale(1.1); /* Slight grow effect on hover */
+    }
+
+    .contact-info, 
+    .contact-form {
+        width: 100%;
+        flex: none;
+        margin: 15px 0;
+        padding: 0 15px;
+        box-sizing: border-box;
     }
 
     .download-btn {
-      margin-left: 0; /*reset the margin for mobile */
-      margin-top:20px;
+        margin-left: 0;
+        margin-top: 30px;
+        width: 100%;
+        text-align: center;
     }
+
     .overlay-container {
         position: absolute;
         width: 100%;
-        height: 85.2%;
+        height: auto;
+        min-height: 85.2%;
         top: 0;
         left: 0;
-        z-index: 2; /* Ensures it's above the slideshow */
+        z-index: 2;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
         text-align: center;
         overflow-x: hidden;
+        padding: 20px;
+        box-sizing: border-box;
     }
+
+    /* Form elements */
+    .contact-form input,
+    .contact-form textarea,
+    .contact-form button {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    /* Additional mobile-specific adjustments */
+    body {
+        overflow-x: hidden;
+    }
+
+    /* For very small devices */
+    @media screen and (max-width: 480px) {
+        .overlay-container {
+            height: auto;
+            padding: 10px;
+        }
+        
+        .social-links a {
+            font-size: 26px; /* Still large for small devices */
+            width: 44px;
+            height: 44px;
+        }
+        
+        .contact-info h3,
+        .contact-form h3 {
+            font-size: 1.2rem;
+        }
+    }
+
+    /* For landscape orientation on mobile */
+    @media screen and (max-height: 500px) and (orientation: landscape) {
+        .overlay-container {
+            height: 100vh;
+            justify-content: flex-start;
+            padding-top: 20px;
+        }
+        
+        .social-links {
+            gap: 15px; /* Slightly smaller gap in landscape */
+        }
+        
+        .social-links a {
+            font-size: 24px; /* Adjusted for landscape */
+        }
+    }
+}
     
     /* Semi-transparent overlay */
     .overlay-content {
