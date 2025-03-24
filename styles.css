@@ -979,9 +979,9 @@ footer {
     } */
 
     .overlay-container {
-        position: relative;
+        position: absolute;
         width: 100%;
-        min-height: auto;
+        height: 80%;
         top: 0;
         left: 0;
         z-index: 2;
